@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %} welcome to MyBlog  {% endblock  %}
+{% block body  %}
+<div class="container">
+    <div class="row">
+        <div class="col s12 m10">
+            <h3>{{p.title}}</h3>
+            <!-- <p>{{p.cat.title}}</p> -->
+            <img src="/media/{{p.image}}" alt="" style="width: 100%;">
+            <p>{{p.content|safe}}</p>
+        </div>
+
+    </div>
+</div>
+{%endblock%}
